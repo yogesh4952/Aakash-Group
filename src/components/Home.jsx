@@ -73,7 +73,8 @@ const Home = () => {
   return (
     <div
       id='home'
-      className='px-4 py-2 border bg-hero h-[90vh] mb-1 text-white text-center  overflow-hidden  items-center '
+      className='px-4 py2
+       bg-hero min-h-[90vh]  text-white text-center  overflow-hidden  items-center '
     >
       <div className='mt-24'>
         <div>

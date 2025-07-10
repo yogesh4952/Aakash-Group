@@ -7,20 +7,23 @@ const Header = () => {
   return (
     <div className='sticky top-0 right-0 w-full px-4 py-5 shadow-lg flex justify-between items-center bg-[#fdfdfd] z-50'>
       {/* Logo */}
-      <h1 className='text-xl font-bold'>{'<Tech Lab/>'}</h1>
+      <h1 className='text-2xl text-[#870c15]  font-bold'>{'<Tech Lab/>'}</h1>
 
       {/* Desktop menu */}
       <div className='hidden sm:flex gap-4'>
-        <p className='hover:text-[#870c15] cursor-pointer transition-colors'>
+        <a
+          href='#contact-us'
+          className='text-[#870c15] cursor-pointer transition-colors'
+        >
           Home
-        </p>{' '}
-        <p className='hover:text-[#870c15] cursor-pointer transition-colors'>
+        </a>{' '}
+        <p className='text-[#870c15] cursor-pointer transition-colors'>
           About Us
         </p>
-        <p className='hover:text-[#870c15] cursor-pointer transition-colors'>
+        <p className='text-[#870c15] cursor-pointer transition-colors'>
           Our Team
         </p>
-        <p className='hover:text-[#870c15] cursor-pointer transition-colors'>
+        <p className='text-[#870c15] cursor-pointer transition-colors'>
           Contact Us
         </p>
       </div>

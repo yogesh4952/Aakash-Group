@@ -12,3 +12,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+inp {
+  padding: 0 12px;
+}
