@@ -60,7 +60,7 @@ const About = () => {
 
   return (
     <section
-      id='about'
+      id='about-us'
       className='py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden'
     >
       {/* Animated Background Elements */}

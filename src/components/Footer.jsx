@@ -88,7 +88,7 @@ const Footer = () => {
       </div>
 
       <div className='mt-5 text-gray-300 pb-5 text-lg text-center'>
-        © 2024 TechLab. All rights reserved. Built with React & TypeScript.
+        © 2024 TechLab. All rights reserved. Built with React & Javascript.
       </div>
     </div>
   );

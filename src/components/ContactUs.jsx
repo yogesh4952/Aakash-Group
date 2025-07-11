@@ -98,7 +98,7 @@ const ContactUs = () => {
 
   return (
     <div
-      id='#contact-us'
+      id='contact-us'
       className='px-4 py-2 text-white pb-14 pt-20  text-center bg-gradient-to-br from-gray-900 via-gray-800 to-black '
     >
       <div className='relative inline-block'>
@@ -200,7 +200,7 @@ const ContactUs = () => {
                 Message
               </label>
               <textarea
-                className='min-w-full outline-none border px-2 py-4 border-gray-200 rounded min-h-20 max-h-32 overflow-y-auto'
+                className='min-w-full outline-none border px-2 py-4 text-white border-gray-200 rounded min-h-20 max-h-32 overflow-y-auto'
                 name='message'
                 id='message'
                 placeholder='Your message here...'

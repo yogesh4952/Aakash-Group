@@ -62,8 +62,8 @@ const Team = () => {
 
   return (
     <div
-      id='our-team'
       className='text-white px-4 py-2 pt-12 bg-gradient-to-br from-gray-900 via-gray-800 to-black'
+      id='team'
     >
       {' '}
       <h1 className='text-center text-3xl font-bold'>Meet our Team</h1>

@@ -1,31 +1,36 @@
 import React, { useState } from 'react';
 import { IoIosMenu } from 'react-icons/io';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='sticky top-0 right-0 w-full px-4 py-5 shadow-lg flex justify-between items-center bg-[#fdfdfd] z-50'>
+    <nav
+      id='our-team'
+      className='fixed text-white top-0 right-0 w-full px-4 py-5 shadow-lg flex justify-between items-center backdrop-blur-md bg-black/30 border-b border-white/10   z-50'
+    >
       {/* Logo */}
-      <h1 className='text-2xl text-[#870c15]  font-bold'>{'<Tech Lab/>'}</h1>
+      <h1 className='text-2xl  glow-text  font-bold'>{'<Tech Lab/>'}</h1>
 
       {/* Desktop menu */}
-      <div className='hidden sm:flex gap-4'>
-        <a
-          href='#contact-us'
-          className='text-[#870c15] cursor-pointer transition-colors'
-        >
+      <div className='hidden sm:flex gap-4 font-semibold'>
+        <a href='#home' className=' cursor-pointer transition-colors'>
           Home
-        </a>{' '}
-        <p className='text-[#870c15] cursor-pointer transition-colors'>
+        </a>
+
+        <a href='#about-us' className=' cursor-pointer transition-colors'>
           About Us
-        </p>
-        <p className='text-[#870c15] cursor-pointer transition-colors'>
+        </a>
+
+        <a href='#team' className=' cursor-pointer transition-colors'>
           Our Team
-        </p>
-        <p className='text-[#870c15] cursor-pointer transition-colors'>
+        </a>
+
+        <a href='#contact-us' className=' cursor-pointer transition-colors'>
           Contact Us
-        </p>
+        </a>
+        <NavLink className='cursor-pointer transition-colors'>API Demo</NavLink>
       </div>
 
       {/* Mobile menu icon */}
@@ -38,7 +43,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`fixed top-0 right-0 h-screen w-52 bg-white shadow-md transform transition-transform duration-300 ease-in-out z-40 ${
+        className={`fixed top-0 right-0 h-screen w-52 shadow-md transform transition-transform duration-300 ease-in-out backdrop-blur-md bg-black/80 border-l  border-white/10    z-40 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -58,7 +63,7 @@ const Header = () => {
             About Us
           </a>
           <a
-            href='#our-team'
+            href='# team'
             className='hover:text-[#870c15] cursor-pointer transition-colors'
             onClick={() => setIsOpen(false)}
           >
@@ -71,9 +76,11 @@ const Header = () => {
           >
             Contact Us
           </a>
+
+          <a href='#api-demo'>API Demo</a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
