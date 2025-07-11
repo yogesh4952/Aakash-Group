@@ -14,6 +14,7 @@ import {
   Award,
   TrendingUp,
 } from 'lucide-react';
+import MovieHeader from './MovieHeader';
 
 const MovieDetail = () => {
   const { id } = useParams();
@@ -149,21 +150,24 @@ const MovieDetail = () => {
 
   if (error || !movie) {
     return (
-      <div className='min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 pt-16'>
-        <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-          <div className='text-center'>
-            <h1 className='text-2xl font-bold text-white mb-4'>
-              Movie Not Found
-            </h1>
-            <p className='text-gray-400 mb-8'>
-              {error || 'The requested movie could not be found.'}
-            </p>
-            <Link
-              to='/movie'
-              className='bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors duration-200'
-            >
-              Back to Movies
-            </Link>
+      <div>
+        <MovieHeader />
+        <div className='min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 pt-16'>
+          <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+            <div className='text-center'>
+              <h1 className='text-2xl font-bold text-white mb-4'>
+                Movie Not Found
+              </h1>
+              <p className='text-gray-400 mb-8'>
+                {error || 'The requested movie could not be found.'}
+              </p>
+              <Link
+                to='/movie'
+                className='bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors duration-200'
+              >
+                Back to Movies
+              </Link>
+            </div>
           </div>
         </div>
       </div>

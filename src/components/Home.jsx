@@ -4,6 +4,7 @@ import Header from './Header';
 import About from './About';
 import Team from './Team';
 import ContactUs from './ContactUs';
+import Slider from './Slider';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Header />
       <Hero />
       <About />
+      <Slider />
       <Team />
       <ContactUs />
     </div>

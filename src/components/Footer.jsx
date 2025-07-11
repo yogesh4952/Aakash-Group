@@ -1,13 +1,11 @@
 import React from 'react';
-import Facebook from '../pages/Facebook';
-import Twitter from '../pages/Twitter';
-import Linkedin from '../pages/Linkedin';
-import Instagram from '../pages/Instagram';
-import { BsMailbox } from 'react-icons/bs';
+import Facebook from '../Icons/Facebook';
+import Twitter from '../Icons/Twitter';
+import Linkedin from '../Icons/Linkedin';
+import Instagram from '../Icons/Instagram';
 import { CgMail } from 'react-icons/cg';
 import { MdDialerSip } from 'react-icons/md';
-import { BiLocationPlus } from 'react-icons/bi';
-import { CiLocationOff, CiLocationOn } from 'react-icons/ci';
+import { CiLocationOn } from 'react-icons/ci';
 const Footer = () => {
   return (
     <div className='  h-full bg-gray-900 text-white'>
