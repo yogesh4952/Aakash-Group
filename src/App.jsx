@@ -1,20 +1,20 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './components/Home';
-import { ToastContainer } from 'react-toastify';
-import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
-import Team from './components/Team';
-import About from './components/About';
+import { ToastContainer } from 'react-toastify';
+import Home from './components/Home';
+import MovieSearch from './api/MovieSearch';
+import MovieDetail from './api/MovieDetail';
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Home />
-      <About />
-      <Team />
-      <ContactUs />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/movie' element={<MovieSearch />} />
+        <Route path='/movie/:id' element={<MovieDetail />} />
+      </Routes>
       <Footer />
       <ToastContainer position='top-right' autoClose={3000} />
     </div>

@@ -151,7 +151,7 @@ const ContactUs = () => {
           </div>
         ) : (
           <form className='px-6 py-2 ' onSubmit={handleSubmit}>
-            <div className=' gap-2 flex flex-col md:flex-row w-full md:justify-between md:items-center'>
+            <div className=' gap-2 flex flex-col lg:flex-row w-full md:justify-between md:items-center'>
               <div className='flex flex-col text-left'>
                 <label htmlFor='name'>Name</label>
                 <input

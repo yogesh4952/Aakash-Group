@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { IoIosMenu } from 'react-icons/io';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav
@@ -11,7 +12,12 @@ const Header = () => {
       className='fixed text-white top-0 right-0 w-full px-4 py-5 shadow-lg flex justify-between items-center backdrop-blur-md bg-black/30 border-b border-white/10   z-50'
     >
       {/* Logo */}
-      <h1 className='text-2xl  glow-text  font-bold'>{'<Tech Lab/>'}</h1>
+      <h1
+        onClick={() => navigate('/')}
+        className='text-2xl cursor-pointer  glow-text  font-bold'
+      >
+        {'<Tech Lab/>'}
+      </h1>
 
       {/* Desktop menu */}
       <div className='hidden sm:flex gap-4 font-semibold'>
@@ -30,7 +36,9 @@ const Header = () => {
         <a href='#contact-us' className=' cursor-pointer transition-colors'>
           Contact Us
         </a>
-        <NavLink className='cursor-pointer transition-colors'>API Demo</NavLink>
+        <NavLink to='/movie' className='cursor-pointer transition-colors'>
+          Movies
+        </NavLink>
       </div>
 
       {/* Mobile menu icon */}
@@ -77,7 +85,7 @@ const Header = () => {
             Contact Us
           </a>
 
-          <a href='#api-demo'>API Demo</a>
+          <NavLink to='/movie'>Movies</NavLink>
         </div>
       </div>
     </nav>
