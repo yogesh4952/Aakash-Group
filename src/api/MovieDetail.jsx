@@ -195,7 +195,7 @@ const MovieDetail = () => {
           <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 w-full'>
             <div className='lg:col-span-2'>
               <Link
-                to='/movies'
+                to='/movie'
                 className='inline-flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 mb-4 transition-colors duration-200'
               >
                 <ArrowLeft className='h-5 w-5' />
