@@ -131,7 +131,7 @@ npm run build
 
 ---
 
-## 📱 Responsive Design
+##  Responsive Design 
 
 - **Mobile First** – Fully optimized for smaller screens
 - **Tablet Support** – Seamless layout on medium viewports
